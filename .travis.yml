@@ -3,6 +3,9 @@ language: dart
 dart:
   - stable
 
+before_install:
+- openssl aes-256-cbc -K $encrypted_d14aa3315039_key -iv $encrypted_d14aa3315039_iv -in donnelson-sandbox-c04a93dbca2b.json.enc -out ./donnelson-sandbox-c04a93dbca2b.json -d
+
 before_script:
   # https://flutter.dev/docs/get-started/web
   - git clone https://github.com/flutter/flutter.git -b beta
@@ -28,7 +31,7 @@ script:
 deploy:
   edge: true
   provider: gae
-  keyfile: "YOUR SERVICE ACCOUNT JSON FILE"
+  keyfile: "./donnelson-sandbox-c04a93dbca2b.json"
   project: "donnelson-sandbox"
   skip_cleanup: true
 
