@@ -1,0 +1,7 @@
+name: debugging_dartserver_with_flutter_webapp
+description: Web server sandbox
+version: 0.0.1
+author: Brandon Donnelson
+
+dependencies:
+   mime_type: 0.3.1

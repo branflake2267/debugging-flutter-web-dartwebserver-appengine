@@ -1,0 +1,4 @@
+# https://cloud.google.com/appengine/docs/flexible/custom-runtimes/quickstart
+
+runtime: custom
+env: flex

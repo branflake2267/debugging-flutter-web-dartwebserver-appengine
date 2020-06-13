@@ -1,0 +1,48 @@
+# https://docs.travis-ci.com/user/languages/dart/
+language: dart
+dart:
+  - stable
+
+before_script:
+  # https://flutter.dev/docs/get-started/web
+  - git clone https://github.com/flutter/flutter.git -b beta
+  - export PATH="$PATH:`pwd`/flutter/bin"
+  - flutter upgrade
+  - flutter config --enable-web
+  - flutter doctor
+
+script:
+  - sh ./build.sh
+  # Debug
+  - pwd
+  - ls -la
+  # Clean up
+  # Remove unused directories, the ./dist directory houses it now
+  - rm -rf ./client
+  - rm -rf ./server
+  - rm -rf ./flutter
+
+# Deploy configuration
+# https://docs.travis-ci.com/user/deployment-v2
+# https://cloud.google.com/docs/authentication/getting-started#cloud-console - generate secret key
+deploy:
+  edge: true
+  provider: gae
+  keyfile: "YOUR SERVICE ACCOUNT JSON FILE"
+  project: "donnelson-sandbox"
+  skip_cleanup: true
+
+
+    
+# Run Travis CLI in this repo
+# gem install travis
+
+# Delete Travis Cache
+# travis cache --com
+# travis cache --com --delete
+
+# Encrypt Secure Variables
+# gem install travis
+# travis login --github-token replace_with_github_personal_token
+# cd to/this/repo
+# travis encrypt-file donnelson-sandbox-c04a93dbca2b.json

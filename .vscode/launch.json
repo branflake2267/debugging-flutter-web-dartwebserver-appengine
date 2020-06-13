@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1. Launch Server",
+      "program": "server/lib/server.dart",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "2. Launch Flutter Web App (DEV)",
+      "request": "launch",
+      "type": "dart",
+      "program": "client/lib/main_dev.dart",
+      "args": [
+        "-d", "chrome"
+      ]
+    },
+    {
+      "name": "2. Launch Flutter Web App (PROD)",
+      "request": "launch",
+      "type": "dart",
+      "program": "client/lib/main.dart",
+      "args": [
+        "-d", "chrome"
+      ]
+    }
+  ]
+}
