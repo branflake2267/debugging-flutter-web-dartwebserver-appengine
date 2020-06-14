@@ -103,7 +103,8 @@ Add the program launcher, to launch the web server.
 3. Create an App Engine Application https://console.cloud.google.com/appengine/start.
     - This app is Node.js & a Standard App Engine deployment.
     - Download Cloud SDK CLI tools
-    - Run gcloud init
+    - Run `gcloud init`
+    - Run `gcloud app create` - create a flex project
 4. Create a service account for App Engine Admin for deployments. 
     - And be sure you add the `Cloud Build API` permissions to the services account. 
     - And turn on the [Cloud API Dash](https://console.developers.google.com/apis/api/cloudbuild.googleapis.com/overview) for the project.
