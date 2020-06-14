@@ -95,38 +95,23 @@ Add the program launcher, to launch the web server.
 * [Generate a Flutter Web App Instructions](https://flutter.dev/docs/get-started/web)
 * I ran `flutter create client` to create an app named client.
 
-### Configure AWS & EB CLI
-Configure the AWS CLI and EB CLI utilities.
 
-* [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
-* [Configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-* [EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html)
+### Cloud Tools CLI Installation
 
-Run `aws configure` to configure the AWS credentials locally.
+1. Sign up for [Google Cloud Compute](https://console.cloud.google.com/).
+2. Create a GCP project.
+3. Create an App Engine Application https://console.cloud.google.com/appengine/start.
+    - This app is Node.js & a Standard App Engine deployment.
+    - Download Cloud SDK CLI tools
+    - Run gcloud init
+4. Create a service account for App Engine Admin for deployments. 
+    - And be sure you add the `Cloud Build API` permissions to the services account. 
+    - And turn on the [Cloud API Dash](https://console.developers.google.com/apis/api/cloudbuild.googleapis.com/overview) for the project.
+5. Create an App Engine project in the console https://console.cloud.google.com/appengine.
+    - After you create an app engine project, follow the App Engine getting strted instructions on how to install Cloud CLI.
 
+### app.yaml
+[app.yaml](./server/app.yaml) configures the App Engine web hosting service options. [app.yaml reference](https://cloud.google.com/appengine/docs/standard/nodejs/config/appref)
 
-
-
-#### Create Elastic Beanstalk Application
-Set up the Elastic Beanstalk application.
-
-Run `eb init` to configure the Elastic Beanstalk hosting config.
-
-* Choose the datacenter that makes sense to you. (I'll choose the default.)
-* Choose `Create New Application` and I use the default application name in this example.
-* Choose `Multi-container Docker` and the latest version.
-* Do not choose CodeCommit in this config.
-* Choose the SSH key to setup SSH, if you want to use SSH.
-
-This will create a project file [./.elasticbeanstalk/config.yml](./.elasticbeanstalk/config.yml).
-
-#### Create Elastic Beanstalk Environment.
-Set up an Elastic environment for your application. 
-
-Run `eb create dartserver-staging-v1` where `dartserver-staging-v1` is the enviornment name you choose. 
-
-#### Docker Config
-The `Dockerrun.aws.json` will configure the docker container when deployed. 
-In this configuration I won't show how to build and deploy a Docker image to ECR.
 
 
