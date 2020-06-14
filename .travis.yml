@@ -4,7 +4,7 @@ dart:
   - stable
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_d14aa3315039_key -iv $encrypted_d14aa3315039_iv -in donnelson-sandbox-c04a93dbca2b.json.enc -out ./donnelson-sandbox-c04a93dbca2b.json -d
+- openssl aes-256-cbc -K $encrypted_fcd3721d6cbf_key -iv $encrypted_fcd3721d6cbf_iv -in donnelson-sandbox-flex-c774ac1c9428.json.enc -out ./donnelson-sandbox-flex-c774ac1c9428.json -d
 
 before_script:
   # https://flutter.dev/docs/get-started/web
@@ -26,13 +26,13 @@ script:
   - rm -rf ./flutter
 
 # Deploy configuration
-# https://docs.travis-ci.com/user/deployment-v2
+# https://docs.travis-ci.com/user/deployment-v2 - configuration reference
 # https://cloud.google.com/docs/authentication/getting-started#cloud-console - generate secret key
 deploy:
   edge: true
   provider: gae
-  keyfile: "./donnelson-sandbox-c04a93dbca2b.json"
-  project: "donnelson-sandbox"
+  keyfile: "./donnelson-sandbox-flex-c774ac1c9428.json"
+  project: "donnelson-sandbox-flex"
   skip_cleanup: true
 
 
