@@ -1,5 +1,5 @@
-# Debugging and Deploying a Flutter Web App To Elastic Beanstalk
-Debugging and deploying a Flutter web app with Dart HTTP web server to Elastic Beanstalk.
+# Debugging and Deploying a Flutter Web App To App Engine Flex
+Debugging and deploying a Flutter web app with Dart HTTP web server to App Engine Flex
 
 [![Build Status](https://travis-ci.org/branflake2267/debugging-flutter-web-dartwebserver-appengine.svg?branch=master)](https://travis-ci.org/branflake2267/debugging-flutter-web-dartwebserver-appengine)
 
@@ -9,7 +9,7 @@ Debugging and deploying a Flutter web app with Dart HTTP web server to Elastic B
 ## Project Configuration 
 | Setting | Value |
 | --- | --- |
-| Purpose | Debugging futter web app with dart web server hosted on Elastic Beanstalk |
+| Purpose | Debugging futter web app with dart web server hosted on App Engine |
 | Client | Flutter web app |
 | Server | Dart http web server |
 | Client Language | Dart |
@@ -17,7 +17,7 @@ Debugging and deploying a Flutter web app with Dart HTTP web server to Elastic B
 | Architecture | Flutter/Dart |
 | IDE | Visual Studio Code |
 | CI | Travis CI |
-| Hosting | Elastic Beanstalk |
+| Hosting | App Engine Flex |
 | License | GPL v3 |
 | Tutorial | [Youtube Tutorial](https://youtu.be/lrUrE8F2lNw) |
 
