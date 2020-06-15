@@ -36,10 +36,4 @@ cp -R ./server/* ./dist
 cp -R ./client/build/web/* ./dist/html
 
 
-# Fix packages override wiring
-echo "Update dist/server dart packaging"
-cd ./dist
-pub get
-cd ..
-
 echo "Finished building...";

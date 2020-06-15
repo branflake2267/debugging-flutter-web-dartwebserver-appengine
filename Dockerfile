@@ -1,5 +1,6 @@
 
-# https://cloud.google.com/appengine/docs/flexible/custom-runtimes
+# Google Dart Container with Dart HTTP Server and Flutter Web App
+# https://cloud.google.com/appengine/docs/flexible/custom-runtimes - App Engine Custom Runtime
 
 # https://hub.docker.com/r/google/dart/
 FROM google/dart
@@ -16,5 +17,5 @@ RUN pub get --offline
 # Start the Dart web server
 ENTRYPOINT ["/usr/bin/dart", "/app/lib/server.dart"]
 
-# Expose the port that app engine flex will point to
+# Expose the port that App Engine Flex will point to
 EXPOSE 8080

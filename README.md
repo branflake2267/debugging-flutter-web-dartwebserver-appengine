@@ -54,16 +54,14 @@ Debugging and deploying a Flutter web app with Dart HTTP web server to Elastic B
 Used for debugging deployment config. 
 
 #### Debugging Docker Container
-Make sure things work locally in the `eb local run` runner!
 
-* Run `eb local run`
+* Run `sh ./debug-docker-container-config.sh`
 * Open http://localhost:8080
 
 | Docker cmd | Details |
 | --- | --- |
 | docker ps | list the docker containers and [container id]s |
 | docker exec -it [container id] bash| /bin/bash into the container. (The container name could be used as well.) |
-| eb local run | This will run the Dockerrun.aws.json multi-container configuration  |  
 
 
 
