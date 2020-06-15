@@ -2,10 +2,10 @@
 
 # Build docker
 # NOTE: Increment the version when you change the DockerFile config
-docker build -t donnelson/dartwebserver:1.12 .
+docker build -t donnelson/dartwebserver:1.13 .
 
 # Run docker
-docker run -dit  -p 8080:8080  donnelson/dartwebserver:1.12
+docker run -dit  -p 8080:8080  donnelson/dartwebserver:1.13
 
 # List dockers
 docker ps
