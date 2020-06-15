@@ -3,7 +3,7 @@ Debugging and deploying a Flutter web app with Dart HTTP web server to Elastic B
 
 [![Build Status](https://travis-ci.org/branflake2267/debugging-flutter-web-dartwebserver-appengine.svg?branch=master)](https://travis-ci.org/branflake2267/debugging-flutter-web-dartwebserver-appengine)
 
-[![Debugging Video Tutorial](https://img.youtube.com/vi/xxx/0.jpg)](https://www.youtube.com/watch?v=xxx)
+[![Debugging Video Tutorial](https://img.youtube.com/vi/lrUrE8F2lNw/0.jpg)](https://www.youtube.com/watch?v=lrUrE8F2lNw)
  
 
 ## Project Configuration 
@@ -19,7 +19,7 @@ Debugging and deploying a Flutter web app with Dart HTTP web server to Elastic B
 | CI | Travis CI |
 | Hosting | Elastic Beanstalk |
 | License | GPL v3 |
-| Tutorial | [Youtube Tutorial](https://youtu.be/xxx) |
+| Tutorial | [Youtube Tutorial](https://youtu.be/lrUrE8F2lNw) |
 
 
 ## Debugging
