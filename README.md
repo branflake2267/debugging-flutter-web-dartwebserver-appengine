@@ -9,7 +9,7 @@ Debugging and deploying a Flutter web app with Dart HTTP web server to App Engin
 ## Project Configuration 
 | Setting | Value |
 | --- | --- |
-| Purpose | Debugging futter web app with dart web server hosted on App Engine |
+| Purpose | Debugging Flutter web app with dart web server hosted on App Engine |
 | Client | Flutter web app |
 | Server | Dart http web server |
 | Client Language | Dart |
